@@ -88,8 +88,19 @@ function loseLife() {
     ball.x = paddle.x;
     ball.y = paddle.y - PADDLE_HEIGHT/2 - BALL_RADIUS;
     gameStarted = false; 
+
+    if(lives == 0) {
+        resetGame();
+    }
 }
 
+function resetGame() {
+    document.getElementById("popUp-2").style.display = "block";
+    score = 0;
+    lives = 3; 
+    createBrickGrid();
+    scoreText.text = "Score: " + score + " / Lives: " + lives;
+}
 
 
 function createScoreText() {
@@ -249,7 +260,7 @@ function checkCollision(ballElement, hitElement) {
 
 function createBrick(x,y) {
     var brick = new createjs.Shape();
-    brick.graphics.beginFill('#CD5C5C');
+    brick.graphics.beginFill('DarkCyan');
     brick.graphics.drawRect(0,0, BRICKS_WIDTH, BRICKS_HEIGHT);
     brick.graphics.endFill();
     
@@ -267,7 +278,7 @@ function createBrick(x,y) {
 
 function createBall(){
     ball = new createjs.Shape();
-    ball.graphics.beginFill("Red").drawCircle(0,0,BALL_RADIUS);
+    ball.graphics.beginFill("Crimson").drawCircle(0,0,BALL_RADIUS);
     ball.x = paddle.x;
     ball.y = paddle.y - PADDLE_HEIGHT/2 - BALL_RADIUS;
     stage.addChild(ball); 
@@ -320,3 +331,10 @@ function newBallXSpeedAfterCollision(ballElement, hitElement) {
     }
 }
 
+function play() {
+    document.getElementById("popUp-1").style.display = "none";
+}
+
+function playAgain() {
+    document.getElementById("popUp-2").style.display = "none";
+}

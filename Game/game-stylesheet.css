@@ -1,0 +1,39 @@
+#testCanvas {
+    border: 10px;
+    background-color: whitesmoke;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    
+}
+
+#full-screen{
+    background-color: rosybrown;
+    margin: 2vw;
+}
+
+#popUp-1 {
+    display: block;
+    font-size: large;
+}
+
+#popUp-1 > div{
+    background-color: black;
+    color: white;
+}
+#play-button {
+    margin-bottom: 1vw;
+    font-size: xx-large;
+    background-color: crimson;
+    color: white;
+
+}
+
+#popUp-2 {
+    display: none;
+}
+
+#popUp-2 > div{
+    background-color: black;
+    color: white;
+    font-size: xxx-large;
+}

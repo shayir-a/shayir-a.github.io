@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Game!</title>
+        <link rel="stylesheet" href="game-stylesheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="game-script.js"></script>
+        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    </head>
+    <body onload="init();">
+        <section id="full-screen" class="w3-container w3-center w3-card">
+            <canvas id="testCanvas" width="1020" height="500"></canvas>
+            
+            <div id="popUp-1" class="w3-modal w3-display-container">
+                <div class="w3-modal-content w3-display-middle w3-container w3-card-2">
+                    <p>Welcome to my version of DxBall!</p>
+                    <p>
+                        You can play using your mouse or youtarrow keys 
+                        and spacebar. 
+                    </p>
+                    <button id="play-button" class="w3-button w3-card" onclick="play()">
+                        PLAY
+                    </button>
+                </div>
+            </div>
+
+            <div id="popUp-2" class="w3-modal w3-display-container">
+                <div class="w3-modal-content w3-display-middle w3-container w3-card-2">
+                    <p><b>GAME OVER!!!</b></p>
+                    <button id="play-button" class="w3-button w3-card" onclick="playAgain()">
+                        PLAY AGAIN
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>
