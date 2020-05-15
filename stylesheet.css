@@ -4,6 +4,14 @@ body, h1,h2,h3,h4,h5,h6 {
 
 #sidebar{
     display: none;
+    color: white;
+    background-color: rosybrown;
+    font-size: 3vw;
+    opacity: 60%;
+}
+
+#sidebar-close-button {
+    text-align: right;
 }
 
 #cover-image {
