@@ -1,0 +1,40 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+}
+
+#sidebar{
+    display: none;
+}
+
+#cover-image {
+    width: 100%;
+}
+
+#header{
+    color: white;
+    text-shadow:1px 1px 1px darkslategray;
+    font-size: 5vw;
+    white-space: nowrap;
+    background-color: dimgray;
+    opacity: 50%;
+    margin-top: -2vh;
+}
+
+#about-me {
+    background-color: dimgray;
+    opacity: 45%;
+    color: white;
+    margin-top: -10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+}
+
+#about-me-title{
+    font-size: 5vw;
+}
+
+#about-me-content{
+    font-size: 2vh ;
+}
+
